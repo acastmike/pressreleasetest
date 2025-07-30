@@ -26,7 +26,7 @@ exports.handler = async function (event, context) {
         }
 
         // Note: I've updated the model to a current one to prevent future errors.
-const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${apiKey}`;
+const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
         const payload = {
             contents: [{ role: "user", parts: [{ text: prompt }] }],
         };
